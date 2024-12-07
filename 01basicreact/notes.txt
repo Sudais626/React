@@ -1,0 +1,2 @@
+React--> take a fnc , return html in that fnc , and i will render that html.
+(aik fnc lo or usky andr html return krdo , mai us html ko render krwadunga)

@@ -1,0 +1,16 @@
+
+
+1. if (currencyInfo[to]) 
+What it does:
+This line checks if the currencyInfo object contains a property for the target currency (to).
+currencyInfo is an object that holds exchange rates (e.g., { USD: 1, EUR: 0.9, INR: 83 }).
+currencyInfo[to] accesses the exchange rate for the to currency (e.g., if to = 'INR', currencyInfo['INR'] would be 83).
+If the rate exists, the code inside the if block will run. If not, it skips to the else block.
+2. setConvertedAmount(amount * currencyInfo[to]);
+What it does:
+If the to currency exists in currencyInfo:
+It calculates the converted amount by multiplying:
+amount (the value entered by the user in the "From" input box)
+currencyInfo[to] (the exchange rate for the "To" currency). For example:
+If amount = 10 (user entered 10 in "From") and currencyInfo[to] = 83 (rate for INR), the result is 10 * 83 = 830.
+setConvertedAmount() updates the convertedAmount state with the calculated result. This updates the "To" input box to show the converted value (e.g., 830).
